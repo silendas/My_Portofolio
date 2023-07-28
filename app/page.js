@@ -1,113 +1,300 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
+    <div className="bg-white text-center">
+      <div className="block mx-auto max-w-7xl isolate bg-white md:bg-neutral-200 px-6 md:rounded-lg p-3 md:p-5 md:shadow-md">
+        <div className="flex justify-center">
+          <Image
+            src={"/Foto.jpg"}
+            alt="Profile"
+            width={352}
+            height={40}
+            className="rounded-md shadow-md hidden md:flex"
+          />
+          <Image
+            src={"/Foto.jpg"}
+            alt="Profile"
+            width={202}
+            height={40}
+            className="rounded-md shadow flex md:hidden"
+          />
+        </div>
+        <p className="mt-2 px-0 md:px-72 text-xs md:text-base text-zinc-600">
+          As a student majoring in informatics engineering, I have a passion for
+          technology and a passion for developing innovative solutions through
+          programming and software development.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      </div>
+      <div className="block isolate bg-neutral-200 md:bg-transparent px-6 py-3 md:py-8">
+        <div className="mx-auto max-w-full block">
+          <div className="skill">
+            <span className="text-lg font-skill text-zinc-600">My Skills</span>
+          </div>
+
+          {/* Desktop */}
+
+          <div className="hidden md:flex justify-center gap-8 text-zinc-500 mt-0 md:mt-2">
+            <div className="block">
+              <a href="https://nextjs.org" target="_blank">
+                <div className="flex justify-center">
+                  <Image
+                    src={"/Nextjs.png"}
+                    alt="Nextjs"
+                    width={102}
+                    height={40}
+                    className="p-1"
+                  />
+                </div>
+                <span className="text-zinc-600 skills">Next.js</span>
+              </a>
+            </div>
+            <div className="block">
+              <a href="https://laravel.com/" target="_blank">
+                <div className="flex justify-center">
+                  <Image
+                    src={"/Laravelphp.png"}
+                    alt="Laravel"
+                    width={102}
+                    height={40}
+                    className="p-1"
+                  />
+                </div>
+                <span className="text-zinc-600 skills">Laravel</span>
+              </a>
+            </div>
+            <div className="block">
+              <a href="https://ionicframework.com/" target="_blank">
+                <div className="flex justify-center">
+                  <Image
+                    src={"/IonicM.png"}
+                    alt="Ionic"
+                    width={102}
+                    height={40}
+                    className="p-1"
+                  />
+                </div>
+                <span className="text-zinc-600 skills">Ionic</span>
+              </a>
+            </div>
+            <div className="block">
+              <a href="https://visualstudio.microsoft.com/" target="_blank">
+                <div className="flex justify-center">
+                  <Image
+                    src={"/VBNet.png"}
+                    alt="Visual Basic"
+                    width={102}
+                    height={40}
+                    className="p-1"
+                  />
+                </div>
+                <span className="text-zinc-600 skills">Visual Basic</span>
+              </a>
+            </div>
+            <div className="block">
+              <a href="https://go.dev/" target="_blank">
+                <div className="flex justify-center">
+                  <Image
+                    src={"/Golang.png"}
+                    alt="Go"
+                    width={102}
+                    height={40}
+                    className="p-1"
+                  />
+                </div>
+                <span className="text-zinc-600 skills">Go Language</span>
+              </a>
+            </div>
+            <div className="block">
+              <a href="https://www.mysql.com/" target="_blank">
+                <div className="flex justify-center">
+                  <Image
+                    src={"/mysql.png"}
+                    alt="My SQL"
+                    width={102}
+                    height={40}
+                    className="p-1"
+                  />
+                </div>
+                <span className="text-zinc-600 skills">MySQL</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Mobile */}
+
+          <div className="block md:hidden justify-center gap-5 text-zinc-500 mt-0 md:mt-2">
+            <div className="flex justify-center gap-20 mt-3">
+              <div className="block">
+                <a href="https://nextjs.org" target="_blank">
+                  <div className="flex justify-center">
+                    <Image
+                      src={"/Nextjs.png"}
+                      alt="Nextjs"
+                      width={102}
+                      height={40}
+                      className="p-1"
+                    />
+                  </div>
+                  <span className="text-zinc-600 skills">Next.js</span>
+                </a>
+              </div>
+              <div className="block">
+                <a href="https://laravel.com/" target="_blank">
+                  <div className="flex justify-center">
+                    <Image
+                      src={"/Laravelphp.png"}
+                      alt="Laravel"
+                      width={102}
+                      height={40}
+                      className="p-1"
+                    />
+                  </div>
+                  <span className="text-zinc-600 skills">Laravel</span>
+                </a>
+              </div>
+            </div>
+            <div className="flex justify-center gap-20 mt-2">
+              <div className="block">
+                <a href="https://ionicframework.com/" target="_blank">
+                  <div className="flex justify-center">
+                    <Image
+                      src={"/IonicM.png"}
+                      alt="Ionic"
+                      width={102}
+                      height={40}
+                      className="p-1"
+                    />
+                  </div>
+                  <span className="text-zinc-600 skills">Ionic</span>
+                </a>
+              </div>
+              <div className="block">
+                <a href="https://visualstudio.microsoft.com/" target="_blank">
+                  <div className="flex justify-center">
+                    <Image
+                      src={"/VBNet.png"}
+                      alt="Visual Basic"
+                      width={102}
+                      height={40}
+                      className="p-1"
+                    />
+                  </div>
+                  <span className="text-zinc-600 skills">Visual Basic</span>
+                </a>
+              </div>
+            </div>
+            <div className="flex justify-center gap-20 mt-0">
+              <div className="block">
+                <a href="https://go.dev/" target="_blank">
+                  <div className="flex justify-center">
+                    <Image
+                      src={"/Golang.png"}
+                      alt="Go"
+                      width={102}
+                      height={40}
+                      className="p-1"
+                    />
+                  </div>
+                  <span className="text-zinc-600 skills">Go Language</span>
+                </a>
+              </div>
+              <div className="block">
+                <a href="https://www.mysql.com/" target="_blank">
+                  <div className="flex justify-center">
+                    <Image
+                      src={"/mysql.png"}
+                      alt="My SQL"
+                      width={102}
+                      height={40}
+                      className="p-1"
+                    />
+                  </div>
+                  <span className="text-zinc-600 skills">MySQL</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="block isolate bg-white px-6 py-3 text-start">
+        <div className="mx-auto max-w-full block">
+          <div className="skill block p-1 md:p-5 md:pt-0">
+            <div className="skill-bars">
+              <div className="bar">
+                <div className="info">
+                  <span className="text-md font-present text-zinc-600">
+                    Next.js
+                  </span>
+                </div>
+                <div className="progress-line nextjs">
+                  <span className="bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+            <div className="skill-bars">
+              <div className="bar">
+                <div className="info">
+                  <span className="text-md font-present text-zinc-600">
+                    Laravel
+                  </span>
+                </div>
+                <div className="progress-line laravel">
+                  <span className="bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+            <div className="skill-bars">
+              <div className="bar">
+                <div className="info">
+                  <span className="text-md font-present text-zinc-600">
+                    Ionic
+                  </span>
+                </div>
+                <div className="progress-line ionic">
+                  <span className="bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+            <div className="skill-bars">
+              <div className="bar">
+                <div className="info">
+                  <span className="text-md font-present text-zinc-600">
+                    Visual Basic.NET
+                  </span>
+                </div>
+                <div className="progress-line vb">
+                  <span className="bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+            <div className="skill-bars">
+              <div className="bar">
+                <div className="info">
+                  <span className="text-md font-present text-zinc-600">
+                    Go Language
+                  </span>
+                </div>
+                <div className="progress-line golang">
+                  <span className="bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+            <div className="skill-bars">
+              <div className="bar">
+                <div className="info">
+                  <span className="text-md font-present text-zinc-600">
+                    MySQL
+                  </span>
+                </div>
+                <div className="progress-line mysql">
+                  <span className="bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </div>
+  );
 }
